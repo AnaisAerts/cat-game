@@ -1,0 +1,166 @@
+/* BODY */
+body {
+    overflow: hidden;
+    margin: auto;
+    background-color: black;
+}
+
+/* GAME */
+.game {
+    width: 700px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+
+    background-color: white;
+
+    position: relative;
+    z-index: -2;
+}
+
+/* CAT */
+#cat {
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/marche.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    position: relative;
+    top: 228px;
+}
+
+.jump {
+    animation: jump 0.3s ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        top: 228px;
+    }
+
+    30% {
+        top: 200px;
+    }
+
+    50% {
+        top: 100px;
+    }
+
+    80% {
+        top: 200px;
+    }
+
+    100% {
+        top: 228px;
+    }
+}
+
+/* PLANT */
+#plant {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/plante.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    position: relative;
+    top: 193px;
+    left: 670px;
+
+    animation: block 1.5s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 670px;
+    }
+
+    100% {
+        left: -40px;
+    }
+}
+
+/* GROUND */
+#g1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    animation: ground1 4s infinite linear;
+}
+
+@keyframes ground1 {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -700px;
+    }
+}
+
+#g2 {
+    position: absolute;
+    bottom: 0;
+    left: 700px;
+    
+    animation: ground2 4s infinite linear;
+}
+
+@keyframes ground2 {
+    0% {
+        left: 700px;
+    }
+
+    100% {
+        left: 1px;
+    }
+}
+
+/* TIME */
+#time {
+    font-weight: bold;
+
+    position: absolute;
+    right: 3%;
+    bottom: 30%;
+}
+
+/* BUTTON */
+button {
+    position: absolute;
+    z-index: +1;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* KEY TEXT */
+#start {
+    width: 700px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 50px;
+
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+}
+
+/* PARALLAX */
+#scene {
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}

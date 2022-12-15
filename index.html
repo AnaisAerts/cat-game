@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Game Cat">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Cat, Race, Game">
+    <meta name="author" content="Anaïs Aerts">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- *** LINK *** -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- *** TITLE *** -->
+    <title>Cat Game</title>
+</head>
+<body>
+
+    <div class="game">
+        <div id="cat"></div>
+        <div id="plant"></div>
+        <div id="g1" class="ground1"><img src="images/ground.png" alt=""></div>
+        <div id="g2" class="ground2"><img src="images/ground.png" alt=""></div>
+
+        <div class="scene" id="scene">
+            <div data-depth="1.00"><img src="images/cloud1.png"></div>
+            <div data-depth="0.90"><img src="images/cloud2.png"></div>
+            <div data-depth="0.80"><img src="images/cloud3.png"></div>
+            <div data-depth="0.70"><img src="images/cloud4.png"></div>
+            <div data-depth="0.60"><img src="images/cloud5.png"></div>
+            <div data-depth="0.50"><img src="images/cloud6.png"></div>
+            <div data-depth="0.40"><img src="images/cloud7.png"></div>
+            <div data-depth="0.30"><img src="images/cloud8.png"></div>
+            <div data-depth="0.20"><img src="images/sun.png"></div>
+            <div data-depth="0.00"><img src="images/tree1.png"></div>
+            <div data-depth="0.00"><img src="images/tree2.png"></div>
+        </div>
+
+        <div id="time">0</div>
+
+        <button id="buttonD">Lancer le jeu</button>
+        <button id="buttonR">Relancer</button>
+
+        <div id="start">Press any key to jump !</div>
+    </div>
+    
+    <!-- *** SCRIPT *** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
